@@ -1,11 +1,21 @@
-<section class="container py-5">
-    <div class="row">
+<section class="inner-hero-section">
+    {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | img_url: 'large' }}" alt="">
+    {% else %}
+        {% capture current %}{% cycle 1, 2 %}{% endcapture %}
+        {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %} 
+
+    <div class="py-5">
+      <div class="row">
         <div class="col-lg-6 col-md-8 mx-auto">
             <h1>{{ section.settings.title }}</h1>
             {{ section.settings.description }}
-            <a href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
-        </div>
+            <a href="{{ section.settings.button_link }}" class="btn btn-secondary">{{ section.settings.button_label }}</a>
+        </div> 
+      </div>
     </div>
+    
 </section>
 
 
@@ -14,6 +24,11 @@
     "name": "Hero",
     "class": "hero-section",
     "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Heading Background Title"
+        },
         {
             "type": "text",
             "id": "title",
