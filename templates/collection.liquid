@@ -34,7 +34,14 @@
           {% if paginate.previous.is_link %}}
             <li class="page-item"><a href="{{ paginate.previous.url }}" class="page-link">{{ paginate.previous.title }}</a></li>
           {% endif %}
-          <li class="page-item" href="#" class="page-link">1</li>
+
+          {% for part in paginate.parts %}
+            {% if part.is_link %} 
+              <li class="page-item"><a href="{{ part.url }}" class="page-link">{{ part.title }}</a></li>
+            {% else %}
+              <li class="page-item disabled" href="{{ part.url }}" class="page-link">{{ part.title }}</li>
+            {% endif %}
+          {% endfor %}
           {% if paginate.previous.is_link %}}
             <li class="page-item"><a href="{{ paginate.previous.url }}" class="page-link">{{ paginate.previous.title }}</a></li>
           {% endif %}
