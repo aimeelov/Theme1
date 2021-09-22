@@ -9,6 +9,23 @@
           "button_label": "Button",
           "button_link": ""
         }
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "9f631ad1-12e9-44fd-a686-0606926c97b5": {
+            "type": "faq",
+            "settings": {
+              "title": "FAQ Title Example",
+              "answer": "<p>answer<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "9f631ad1-12e9-44fd-a686-0606926c97b5"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
