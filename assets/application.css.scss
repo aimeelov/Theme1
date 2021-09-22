@@ -4,14 +4,17 @@ body {}
 
 // Links
 
-a {
-    color: {{ settings: .color_link; }};
-    text-decoration: $link-decoration;
+$color-link: {{ settings.color_link }};
 
-    &:hover {
-        color: {{ settings: .color_link; }};
-        text-decoration: $link-hover-decoration;
-    }
+a {
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: darken($color-link, 20%);
+    text-decoration: underline;
+  }
 }
 
 
