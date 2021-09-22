@@ -34,6 +34,49 @@
         ],
         "settings": {
         }
+      },
+      "footer-section": {
+        "type": "footer-section",
+        "blocks": {
+          "32050d5a-5054-48bc-b0d4-f03b4c4e01d5": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "main-menu"
+            }
+          },
+          "962f8433-9c43-4441-83ae-6ea8ce2a2189": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "footer"
+            }
+          },
+          "97e06edb-18a0-4d9f-ad5b-17c81c19c346": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "main-menu"
+            }
+          },
+          "7623eb19-33cb-4908-a568-d276d65a65d8": {
+            "type": "text",
+            "settings": {
+              "title": "Store information",
+              "description": ""
+            }
+          }
+        },
+        "block_order": [
+          "32050d5a-5054-48bc-b0d4-f03b4c4e01d5",
+          "962f8433-9c43-4441-83ae-6ea8ce2a2189",
+          "97e06edb-18a0-4d9f-ad5b-17c81c19c346",
+          "7623eb19-33cb-4908-a568-d276d65a65d8"
+        ],
+        "settings": {
+          "col_num": 3,
+          "enable_payment_type_icons": true
+        }
       }
     },
     "content_for_index": [
