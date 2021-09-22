@@ -19,7 +19,6 @@
   <main role="main">
     {{ content_for_layout }}
   </main>
-  {{ 'bootstrap.js' | asset_url | script_tag }}
-  {{ 'application.js' | asset_url | script_tag }}
+  {% section 'footer-section' %}
 </body>
 </html>
