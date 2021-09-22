@@ -4,10 +4,14 @@
       <h1 class="text-center">{{ collection.title }}</h1>
     </div>
 
-    <div class="row">
-      <select name="sorting" id="sort_by" class="form-select">
-        {% for option in collection.sort-options %}
-          <option value="{{ option.value }}">{{ option.name }}</option>
+    <div class="row justify-content-center">
+      <select name="sorting" id="sort_by" class="form-select form-select-sm w-25">
+        {% for option in collection.sort_options %}
+          <option value="{{ option.value }}"
+            {% if option.value == collection.sort_by %}
+              selected
+            {% endif %}
+          >{{ option.name }}</option>
         {% endfor %}
       </select>
     </div>
