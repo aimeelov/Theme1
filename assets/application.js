@@ -193,6 +193,14 @@ if(productInfoAnchors.length > 0) {
     productInfoAnchors.forEach (item => {
         item.addEventListener("click", event => {
             console.log("I clicked this Image");
+            var url = '/products/{product_handle}.js';
+
+            fetch(url)
+            .then((resp) => resp.json())
+            .then(function(data) {
+                console.log(data);
+            });
+
             productModal.show();
         });
     });
