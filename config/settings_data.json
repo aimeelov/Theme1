@@ -4,10 +4,11 @@
       "1632253201e3db1775": {
         "type": "hero",
         "settings": {
-          "title": "Example Heading",
+          "image": "shopify:\/\/shop_images\/4R5A2538_copy1.png",
+          "title": "STRATA",
           "description": "<p>Example Paragraph<\/p>",
-          "button_label": "Button",
-          "button_link": ""
+          "button_label": "SHOP",
+          "button_link": "shopify:\/\/collections\/all"
         }
       },
       "footer-section": {
@@ -59,10 +60,18 @@
           "container": "container",
           "show_publish_date": true
         }
+      },
+      "16323247528697bb2a": {
+        "type": "featured-collection",
+        "settings": {
+          "featured_collection": "eyewear",
+          "title": "Featured Collection"
+        }
       }
     },
     "content_for_index": [
-      "1632253201e3db1775"
+      "1632253201e3db1775",
+      "16323247528697bb2a"
     ]
   },
   "presets": {
