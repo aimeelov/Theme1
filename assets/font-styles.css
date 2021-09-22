@@ -1,0 +1,16 @@
+{ % assign font_header=settings.header_text_font %}
+{ % assign font_body=settings.body_text_font %}
+{ % assign font_body_size=settings.body_font_size %}
+
+
+
+
+
+h1,h2,h3,h4,h5,h6,button {
+    font-family: , ;
+}
+
+body {
+    font-family: , ;
+    font-size: px;
+}
