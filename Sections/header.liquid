@@ -30,17 +30,10 @@
   </div>
 </nav>
 
-<<<<<<< Updated upstream
-{% if shop.customer_accounts_enabled %}
-    {% if customer %}
-      <a href="/account">account</a>
-      {{ 'log out' | customer_logout_link }}
-=======
   {% if shop.customer_accounts_enabled %}
     {% if customer %}
       <a href="/account">account</a>
-      {{ 'log out'  | customer_logout_link }}
->>>>>>> Stashed changes
+      {{ 'log out'| customer_logout_link }}
     {% else %}
       {{ 'log in ' | customer_login_link }}
       {{ 'register' | customer_register_link }}
