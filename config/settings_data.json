@@ -9,6 +9,56 @@
           "button_label": "Button",
           "button_link": ""
         }
+      },
+      "footer-section": {
+        "type": "footer-section",
+        "blocks": {
+          "58c9fbb0-5f77-47a2-831d-b5d2e315affa": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "main-menu"
+            }
+          },
+          "2663a2cb-fe54-4f62-ac2a-36c666ba8148": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "footer"
+            }
+          },
+          "02213704-ea1e-48ce-84e1-a2c6e4a0790f": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "main-menu"
+            }
+          },
+          "2b3e5c63-292a-43f7-af20-7efd9a7084e7": {
+            "type": "text",
+            "settings": {
+              "title": "Store information",
+              "description": ""
+            }
+          }
+        },
+        "block_order": [
+          "58c9fbb0-5f77-47a2-831d-b5d2e315affa",
+          "2663a2cb-fe54-4f62-ac2a-36c666ba8148",
+          "02213704-ea1e-48ce-84e1-a2c6e4a0790f",
+          "2b3e5c63-292a-43f7-af20-7efd9a7084e7"
+        ],
+        "settings": {
+          "col_num": 3,
+          "enable_payment_type_icons": true
+        }
+      },
+      "page-template": {
+        "type": "page-template",
+        "settings": {
+          "container": "container",
+          "show_publish_date": true
+        }
       }
     },
     "content_for_index": [
