@@ -39,7 +39,7 @@
             {% if part.is_link %} 
               <li class="page-item"><a href="{{ part.url }}" class="page-link">{{ part.title }}</a></li>
             {% else %}
-              <li class="page-item disabled" href="{{ part.url }}" class="page-link">{{ part.title }}</li>
+              <li class="page-item disabled"><a href="{{ part.url }}" class="page-link">{{ part.title }}</a></li>
             {% endif %}
           {% endfor %}
           {% if paginate.previous.is_link %}}
