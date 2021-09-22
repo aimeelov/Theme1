@@ -1,7 +1,7 @@
 <div class="container py-5 my-5">
     <div class="login-form">
         {% form 'create_customer' %}
-            {% include 'form-error', form: form %}
+            {% render 'form-error', form: form %}
             <h1 class="h3">Customer Register</h1>
             
             <label for="firtName">First Name</label>
