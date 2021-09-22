@@ -229,7 +229,7 @@ modalAddToCartForm.addEventListener("submit", function(e) {
         'items': [
             {
                 'id': document.getElementById("modalItemID").value,
-                'quantity': 2
+                'quantity': document.getElementById("modalItemQuantity").value
             }
         ]
     };
@@ -237,12 +237,12 @@ modalAddToCartForm.addEventListener("submit", function(e) {
     fetch('/cart/add.js', {
         method: 'POST',
         headers: {
-            'content-Type': 'application/json'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(formData)
     })
     .then((resp) => resp.json())
-    .catch((err) = => {
+    .catch((err) => {
         console.error('Error: ' + err);
     })
-});
+}); 
