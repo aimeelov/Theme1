@@ -50,7 +50,6 @@
     <div class="text-center"><h1>You may also like this</h1></div>
     <div class="row g-3 row-cols-md-3 row-cols-1">
       <div id="product_recommendation_body">
-
       </div>
     </div>
     
@@ -66,7 +65,7 @@
     if(products.length > 0) {
       products.forEach(function(product, index) {
         var card;
-        card = '<div class="col-3 g-2">';
+        card = '<div class="col">';
         card += '<div class="card" style="width: 18rem;">';
         
         if(product.images.length > 0) {
