@@ -7,12 +7,13 @@
   <link rel="canonical" href="{{ canonical_url }}">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   {{ content_for_header }} <!-- Header hook for plugins -->
-  <link rel="stylesheet" href=" https://cdn.shopify.com/s/files/1/0602/8623/8906/t/scss/_reboot.scss" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
   {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
   {{ 'application.css.scss' | asset_url | stylesheet_tag }}
   {{ 'font-styles.css' | asset_url | stylesheet_tag }}
   {{ 'theme.css' | asset_url | stylesheet_tag }}
+
+  <link rel="stylesheet" type="text/css" href="custom.css">
   
 </head>
 <body>
