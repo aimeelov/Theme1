@@ -1,0 +1,14 @@
+// Put your styles in this file.
+// Note: "@import" rules aren’t supported.
+
+h1,h2,h3,h4,h5,h6 {
+    color: #3d4246;
+}
+
+body {
+    color: #788188;
+}
+
+a {    
+    color: #2980b9 !important;
+}
