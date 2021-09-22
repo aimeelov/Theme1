@@ -1,10 +1,10 @@
 <div class="container">
   {% paginate collection.products by 2 %}
     <div class="row my-5">
-      <h1>{{ collection.title }}</h1>
+      <h1 class="text-center">{{ collection.title }}</h1>
     </div>
  
-    <div class="row">
+    <div class="row justify-content-center">
       {% for product in collection.products %}
       {% assign image = product.featured_medis.preview_image %}
       <div class="col-3 g-2">
