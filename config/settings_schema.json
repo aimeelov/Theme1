@@ -56,5 +56,50 @@
         "step": 1
       }
     ]
+  },
+  {
+    "name": "Theme Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Main Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_heading",
+        "label": "Headings",
+        "default": "#3d4246"
+      },
+      {
+        "type": "color",
+        "id": "color_link",
+        "label": "Links",
+        "default": "#2980b9"
+      },
+      {
+        "type": "color",
+        "id": "color_body",
+        "label": "Body text",
+        "default": "#788188"
+      },
+      {
+        "type": "color",
+        "id": "color_sale",
+        "label": "Sale text",
+        "default": "#2980b9"
+      },
+      {
+        "type": "color",
+        "id": "color_hero",
+        "label": "Hero Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_borders",
+        "label": "Borders and lines",
+        "default": "#e8e9eb"
+      }
+    ]
   }
 ]
