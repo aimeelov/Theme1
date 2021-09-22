@@ -7,6 +7,18 @@
                 <div class="card">
                     {% if image != blank %}
                         <img class="card-img-top" src="{{ image | img_url: 'medium' }}" alt="{{ product.title }}">
+                        <style>
+                        a {
+                            color: {{ settings.color_link }};
+                            text-decoration: none;
+                                &:hover,
+                                &:focus {
+                                    color: darken({{ settings.color_link}}, 20%);
+                                    text-decoration: underline;
+                                         }
+                        }
+                        </style>
+
                         {% else %}
                             {{ 'product-1' | placeholder_svg_tag: 'card-img-top' }}
                     {% endif %}
