@@ -6,19 +6,20 @@
         {% for block in section.blocks %}
             <div class="accordion-item">
                 <h2 class="accordion-header" id="collapse-header-{{ block.id }}">
-                    <button
-                        class="accordion-button collapsed"
-                        type="button"
+                    <button 
+                        class="accordion-button collapsed" 
+                        type="button" 
                         data-bs-toggle="collapse"
                         data-bs-target="#collapse-{{ block.id }}"
                         aria-expanded="false"
                         aria-controls="{{ block.id }}"
                     >{{ block.settings.title }}</button>
                 </h2>
-                <div class="accordion-collapse collapse py"
-                     id="collapse-{{ block.id }}"
-                     aria-labelledby="collapse-header-{{ block.id }}"
-                     data-bs-parent="#accordionFAQ"
+                <div 
+                    class="accordion-collapse collapse p-3" 
+                    id="collapse-{{ block.id }}" 
+                    aria-labelledby="collapse-header-{{ block.id }}"
+                    data-bs-parent="#accordionFAQ"
                 >
                     {{ block.settings.answer }}
                 </div>
@@ -26,6 +27,7 @@
         {% endfor %}
     </div>
 </div>
+
 
 {% schema %}
 {
@@ -38,7 +40,7 @@
                 {
                     "type": "text",
                     "id": "title",
-                    "label": "title",
+                    "label": "Title",
                     "default": "FAQ Title Example"
                 },
                 {
@@ -48,6 +50,6 @@
                 }
             ]
         }
-   ] 
+    ]
 }
 {% endschema %}
