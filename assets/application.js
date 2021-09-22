@@ -156,7 +156,6 @@ if(predictiveSearchInput != null) {
             timer = setTimeout(fetchPredictiveSearch, 3000);
         }
 
-        
     });
 }
 
@@ -166,21 +165,7 @@ function fetchPredictiveSearch() {
     .then(data => { 
         console.log(data);
 
-        var products = data.resources.results.products;
-
-        document.getElementById('search_results_body').innerHTML = '';
-
-        products.forEach(function(product, index) {
-            document.getElementById('search_results_body').innerHTML += `
-                <div class="card" style="width: 19rem;">
-                    <img src="${product.image} class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">${product.title}</h5>
-                        <p class="card-text">$${product.price}</p>
-                    </div>
-                </div>
-            `
-        });
+        
         bsOffcanvas.show();
     });
 }
