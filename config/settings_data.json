@@ -9,10 +9,35 @@
           "button_label": "Button",
           "button_link": ""
         }
+      },
+      "translation": {
+        "type": "translation",
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "footer-section": {
+        "type": "footer-section",
+        "settings": {
+          "col_num": 3,
+          "enable_payment_type_icons": true
+        }
+      },
+      "1632349789d75b2417": {
+        "type": "featured-collection",
+        "settings": {
+          "featured_collection": "eyewear",
+          "title": "Featured Collection"
+        }
       }
     },
     "content_for_index": [
-      "1632253201e3db1775"
+      "1632253201e3db1775",
+      "1632349789d75b2417"
     ]
   },
   "presets": {
