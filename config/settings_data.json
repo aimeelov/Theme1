@@ -19,10 +19,18 @@
               "title": "FAQ Title Example",
               "answer": "<p>answer<\/p>"
             }
+          },
+          "ec85b499-63ec-4e5d-92c6-de2a95fdfac0": {
+            "type": "faq",
+            "settings": {
+              "title": "FAQ Title Example",
+              "answer": "<p>answer<\/p>"
+            }
           }
         },
         "block_order": [
-          "9f631ad1-12e9-44fd-a686-0606926c97b5"
+          "9f631ad1-12e9-44fd-a686-0606926c97b5",
+          "ec85b499-63ec-4e5d-92c6-de2a95fdfac0"
         ],
         "settings": {
         }
