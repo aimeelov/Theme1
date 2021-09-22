@@ -1,5 +1,4 @@
 <!doctype html>
-<html>
 <head>
   <title>{{ page_title }}</title>
   <meta charset="utf-8">
@@ -10,15 +9,16 @@
   {{ content_for_header }} <!-- Header hook for plugins -->
   {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
   {{ 'application.css.scss' | asset_url | stylesheet_tag }}
+  {{ 'font-styles.css' | asset_url | stylesheet_tag }}
 </head>
 <body>
-
-{% section 'Header' %}
-
+  {% section 'translation' %}
+  {% section 'header' %}
 
   <main role="main">
     {{ content_for_layout }}
   </main>
+  
   {% section 'footer-section' %}
 </body>
 </html>
