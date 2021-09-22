@@ -4,10 +4,11 @@
       "1632253201e3db1775": {
         "type": "hero",
         "settings": {
-          "title": "Example Heading",
-          "description": "<p>Example Paragraph<\/p>",
-          "button_label": "Button",
-          "button_link": ""
+          "image": "shopify:\/\/shop_images\/4R5A2418-2_copy.png",
+          "title": "STRATA",
+          "description": "",
+          "button_label": "SHOP",
+          "button_link": "shopify:\/\/collections\/all"
         }
       },
       "translation": {
@@ -22,6 +23,35 @@
       },
       "footer-section": {
         "type": "footer-section",
+        "blocks": {
+          "438b7d73-fd9e-43d4-916d-196af717752b": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "main-menu"
+            }
+          },
+          "ed941cb4-6c85-4e69-9d37-78ae2f1e5e50": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "footer"
+            }
+          },
+          "a9dccf46-2561-490f-b8cb-fbd7ea5b03d3": {
+            "type": "text",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/strata_logo_black_1.png",
+              "title": "Store information",
+              "description": "<p>store hours<br\/>address<br\/>Info<\/p><p><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "438b7d73-fd9e-43d4-916d-196af717752b",
+          "ed941cb4-6c85-4e69-9d37-78ae2f1e5e50",
+          "a9dccf46-2561-490f-b8cb-fbd7ea5b03d3"
+        ],
         "settings": {
           "col_num": 3,
           "enable_payment_type_icons": true
