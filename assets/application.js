@@ -102,7 +102,7 @@ var modalAddToCartForm = document.querySelector("#addToCartForm");
 if( modalAddToCartForm != null ) {
     modalAddToCartForm.addEventListener("submit", function(e) {
         e.preventDefault();
-    
+
         let formData = {
             'items': [
                 {
@@ -111,7 +111,7 @@ if( modalAddToCartForm != null ) {
                 }
             ]
         };
-    
+
         fetch('/cart/add.js', {
             method: 'POST',
             headers: {
@@ -131,3 +131,13 @@ if( modalAddToCartForm != null ) {
     });
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    update_cart();
+});
+
+function update_cart() {
+    fetch('/cart.js')
+    .then((resp) => resp.json())
+    .then((data) => document.getElementById("numberOfCartItems").innerHTML = data.items.length)
+    .catch((err) => console.error(err));
+}
