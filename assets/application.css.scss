@@ -9,7 +9,7 @@ a {
     text-decoration: $link-decoration;
 
     &:hover {
-        color: {{ settings: .color_link; }}link-hover-color;
+        color: {{ settings: .color_link; }};
         text-decoration: $link-hover-decoration;
     }
 }
