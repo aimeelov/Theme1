@@ -205,6 +205,8 @@ if(productInfoAnchors.length > 0) {
                 document.getElementById("productInfoPrice").innerHTML = item.getAttribute('product-price');
                 document.getElementById("productInfoDescription").innerHTML = data.description;
 
+                document.getElementById("modalItemID").value = data.variants(0).id;
+
                 productModal.show();
             });
         });
