@@ -78,3 +78,7 @@ body {}
 #shopify-section-translation {
     position: fixed;
 }
+
+.featured-collection-section .card {
+    z-index: -1;
+}
