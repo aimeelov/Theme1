@@ -184,3 +184,12 @@ function fetchPredictiveSearch() {
         bsOffcanvas.show();
     });
 }
+
+var productInfoAnchors = document.querySelectorAll("#productInfoAnchor");
+if(productInfoAnchors.length > 0) {
+    productInfoAnchors.forEach (item => {
+        item.addEventListener("click", event => {
+        console.log("I clicked this Image");
+        });
+    });
+}
