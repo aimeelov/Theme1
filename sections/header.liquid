@@ -6,27 +6,34 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          {% for link in linklists.main-menu.links %}
+            {% assign child_list_handle = link.title | handleize %}
+            {% if linklists[child_list_handle].links != blank %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ link.url }}">{{ link.title }}</a></li>
+                [{% for childlink in linklists[child_list_handle].links %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
+                    </li>
+                {% endfor %}]
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ link.url }}">{{ link.title }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+         <li class="nav-item">
+           <a class="nav-link" href="/cart">cart</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-{% if shop.customer_accounts_enabled %}
+  {% if shop.customer_accounts_enabled %}
     {% if customer %}
       <a href="/account">account</a>
-      {{ 'log out' | customer_logout_link }}
+      {{ 'log out'  | customer_logout_link }}
     {% else %}
       {{ 'log in ' | customer_login_link }}
       {{ 'register' | customer_register_link }}
