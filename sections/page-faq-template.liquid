@@ -15,12 +15,12 @@
                         aria-controls="{{ block.id }}"
                     >{{ block.settings.title }}</button>
                 </h2>
-                <div class="accordion-collapse collapse p-3"
+                <div class="accordion-collapse collapse py"
                      id="collapse-{{ block.id }}"
                      aria-labelledby="collapse-header-{{ block.id }}"
                      data-bs-parent="#accordionFAQ"
                 >
-                    {{ block.settings.answer }}
+                    {{ block.settings.id }}
                 </div>
             </div>
         {% endfor %}
