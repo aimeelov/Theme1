@@ -1,0 +1,56 @@
+<footer class="footer-section bg-light py-5 mt-5">
+    <div class="container">
+        <div class="row row-cols-{{ section.settings.col_num }}">
+            {% for block in section.blocks %}
+                {% assign item = block.settings %}
+                {% if block.type == "link_list" %}
+                    <div class="col">
+                        <h5>{{ item.title }}</h5>
+                        {% assign footer_linklist = item.menu %}
+                        <ul class="list-unstyled text-small">
+                            {% for link in linklist[footer_linklist].links %}
+                                <li>
+                                    <a href="{{ link.url }}">{{ link.title | escape }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+             {% endfor %}
+        </div>
+    </div>
+</footer>
+
+{{ 'bootstrap.js' | asset_url | script_tag }}
+{{ 'application.js' | asset_url | script_tag }}
+
+{% schema %}
+{
+    "name": "Footer",
+    "settings": [
+        {
+            "type": "range",
+            "id": "col_num",
+            "default": 3,
+            "min": 2,
+            "max": 4,
+            "label": "Number of columns"
+        }
+    ],
+    "blocks": [
+    {
+        "type": "link_list",
+        "name": "Navigation",
+        "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Quick Links"
+        }
+      ]
+    }
+  ]
+}
+
+{% endschema %}
