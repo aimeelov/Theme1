@@ -1,5 +1,6 @@
 {
   "current": {
+    "body_font_size": 15,
     "sections": {
       "1632253201e3db1775": {
         "type": "hero",
@@ -66,6 +67,16 @@
         "settings": {
           "featured_collection": "eyewear",
           "title": "Featured Collection"
+        }
+      },
+      "translation": {
+        "type": "translation",
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
         }
       }
     },
