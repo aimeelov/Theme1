@@ -186,10 +186,14 @@ function fetchPredictiveSearch() {
 }
 
 var productInfoAnchors = document.querySelectorAll("#productInfoAnchor");
+
+var productModal = new bootstrap.Modal(document.getElementById('productInfoModal'), {});
+
 if(productInfoAnchors.length > 0) {
     productInfoAnchors.forEach (item => {
         item.addEventListener("click", event => {
-        console.log("I clicked this Image");
+            console.log("I clicked this Image");
+            productModal.show();
         });
     });
 }
