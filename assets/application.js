@@ -89,6 +89,7 @@ if(productInfoAnchors.length > 0) {
                 });
 
                 productModal.show();
+
             });
 
             
@@ -219,30 +220,3 @@ if(productInfoAnchors.length > 0) {
         });
     });
 } 
-
-var modalAddToCartForm = document.querySelector("#addToCartForm");
-
-modalAddToCartForm.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    let formData = {
-        'items': [
-            {
-                'id': document.getElementById("modalItemID").value,
-                'quantity': document.getElementById("modalItemQuantity").value
-            }
-        ]
-    };
-
-    fetch('/cart/add.js', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-    })
-    .then((resp) => resp.json())
-    .catch((err) => {
-        console.error('Error: ' + err);
-    })
-}); 
