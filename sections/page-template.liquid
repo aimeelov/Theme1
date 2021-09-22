@@ -4,7 +4,7 @@
     {% assign container_class = 'container-fluid' %}
 {% endif %}
 
-<div class="{{ container_class}}">
+<div class="{{ container_class }}">
     <h1>{{ page.title }}</h1>
     {% if section.settings.show_publish_date %}
         <small>{{page.published_at | date: '%B %d, %Y' }}</small>
