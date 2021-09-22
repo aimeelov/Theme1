@@ -2,6 +2,19 @@
 html,
 body {}
 
+// Links
+
+a {
+    color: {{ settings: .color_link; }};
+    text-decoration: $link-decoration;
+
+    &:hover {
+        color: {{ settings: .color_link; }}link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
+}
+
+
 .inner-hero-section {
     position: relative;
     overflow: hidden;
