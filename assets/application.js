@@ -186,3 +186,38 @@ function fetchPredictiveSearch() {
         bsOffcanvas.show();
     });
 }
+
+
+
+var multi_products = []
+    {% for block in section.blocks %}
+
+      {% assign product_handle = block.settings.block_product %};
+
+      var object = {}
+
+      object.handle = "{{product_handle}}"
+      object.url = "{{all_products[product_handle].url }}"
+      object.price = {{ all_products[product_handle].price | money_without_currency }}
+      object.title = "{{ all_products[product_handle].title }}"
+      object.image = "{{ all_products[product_handle].featured_image | img_url: '800x' }}"
+  
+      multi_products.push(object)
+
+    {% endfor %}
+
+
+
+var $product_container = $('#product') 
+
+  var initial_product = multi_products[0]
+
+  var initial_product_html = `<div class="product">
+    <img src="${initial_product.image}">
+    <h3>${initial_product.title}</h3>
+    <p>$${initial_product.price}</p>
+    <a class="button" href="${initial_product.url}">Shop this product</a>
+    </div>
+    `
+
+  $product_container.html(initial_product_html)
