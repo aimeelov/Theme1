@@ -122,7 +122,7 @@ if( modalAddToCartForm != null ) {
             return resp.json();
         })
         .then((data) => {
-            console.log(data);
+            update_cart();
         })
         .catch((err) => {
             console.error('Error: ' + err);
