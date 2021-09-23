@@ -4,13 +4,13 @@
     "template": {
       "type": "template-article",
       "blocks": {
-        "title": {
-          "type": "title",
+        "featured_image": {
+          "type": "featured_image",
           "settings": {
           }
         },
-        "featured_image": {
-          "type": "featured_image",
+        "title": {
+          "type": "title",
           "settings": {
           }
         },
@@ -26,8 +26,8 @@
         }
       },
       "block_order": [
-        "title",
         "featured_image",
+        "title",
         "article_meta",
         "content"
       ],
@@ -36,19 +36,6 @@
     },
     "sidebar": {
       "type": "sidebar",
-      "blocks": {
-        "dc169ff2-ce09-42bc-b9a6-a662db0e81e0": {
-          "type": "image",
-          "settings": {
-            "title": "Roadcase",
-            "image": "shopify:\/\/shop_images\/Photo_May_13_10_31_28_AM_copy.jpg",
-            "url": "shopify:\/\/products\/example-3"
-          }
-        }
-      },
-      "block_order": [
-        "dc169ff2-ce09-42bc-b9a6-a662db0e81e0"
-      ],
       "settings": {
       }
     }
