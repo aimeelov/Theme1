@@ -4,9 +4,17 @@
       "type": "template-404",
       "settings": {
       }
+    },
+    "1632367069446a66cc": {
+      "type": "featured-collection",
+      "settings": {
+        "featured_collection": "",
+        "title": "Featured Collection"
+      }
     }
   },
   "order": [
-    "template"
+    "template",
+    "1632367069446a66cc"
   ]
 }
