@@ -156,6 +156,7 @@ if(predictiveSearchInput != null) {
             timer = setTimeout(fetchPredictiveSearch, 3000);
         }
 
+        
     });
 }
 
