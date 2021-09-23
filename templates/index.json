@@ -3,7 +3,6 @@
     "hero": {
       "type": "hero",
       "settings": {
-        "image": "",
         "title": "Welcome To Strata",
         "description": "<p>We are happy to welcome you to our official store<\/p>",
         "button_label": "Learn more",
@@ -13,7 +12,7 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "featured_collection": "featured-collection",
+        "featured_collection": "eyewear",
         "title": "Featured Collection"
       }
     }
