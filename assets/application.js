@@ -96,7 +96,7 @@ if(productInfoAnchors.length > 0) {
     });
 }
 
-/* Testing different cart modal /*
+
 var modalAddToCartForm = document.querySelector("#addToCartForm");
 
 if( modalAddToCartForm != null ) {
@@ -141,7 +141,7 @@ function update_cart() {
     .then((data) => document.getElementById("numberOfCartItems").innerHTML = data.items.length)
     .catch((err) => console.error(err));
 }
-*/
+
 
 var predictiveSearchInput = document.getElementById('searchInputField');
 var timer;
