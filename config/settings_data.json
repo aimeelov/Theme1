@@ -1,7 +1,5 @@
 {
   "current": {
-    "color_link": "#000",
-    "color_sale": "#788188",
     "sections": {
       "1632253201e3db1775": {
         "type": "hero",
@@ -10,52 +8,6 @@
           "description": "<p>Example Paragraph<\/p>",
           "button_label": "Button",
           "button_link": ""
-        }
-      },
-      "translation": {
-        "type": "translation",
-        "settings": {
-        }
-      },
-      "header": {
-        "type": "header",
-        "settings": {
-        }
-      },
-      "footer-section": {
-        "type": "footer-section",
-        "blocks": {
-          "15542f0d-a03a-48cc-af8d-c2ce640b5f3c": {
-            "type": "text",
-            "settings": {
-              "logo": "shopify:\/\/shop_images\/strata_logo_black_1.png",
-              "title": "Store information",
-              "description": "<p>Store Hours<br\/>Address<br\/>Phone Number<\/p>"
-            }
-          },
-          "cede3f9c-3d64-4f6b-ae39-7eefef70071b": {
-            "type": "link_list",
-            "settings": {
-              "title": "Quick Links",
-              "menu": "main-menu"
-            }
-          },
-          "210d6187-3a94-40ec-b9ee-5d299b4a05f8": {
-            "type": "link_list",
-            "settings": {
-              "title": "Quick Links",
-              "menu": "footer"
-            }
-          }
-        },
-        "block_order": [
-          "15542f0d-a03a-48cc-af8d-c2ce640b5f3c",
-          "cede3f9c-3d64-4f6b-ae39-7eefef70071b",
-          "210d6187-3a94-40ec-b9ee-5d299b4a05f8"
-        ],
-        "settings": {
-          "col_num": 3,
-          "enable_payment_type_icons": true
         }
       }
     },
