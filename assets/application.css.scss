@@ -96,4 +96,11 @@ a {
     position: fixed;
 }
 
+.button:visited {
+    color: #2980b9;
+}
 
+.button:hover,
+.button:active {
+    color: #3498db;
+}
