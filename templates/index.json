@@ -3,6 +3,7 @@
     "hero": {
       "type": "hero",
       "settings": {
+        "image": "shopify:\/\/shop_images\/ROADCASE-7_copy.jpg",
         "title": "Welcome To Strata",
         "description": "<p>We are happy to welcome you to our official store<\/p>",
         "button_label": "Learn more",
@@ -15,10 +16,20 @@
         "featured_collection": "eyewear",
         "title": "Featured Collection"
       }
+    },
+    "163236737391ad6251": {
+      "type": "hero",
+      "settings": {
+        "title": "Example Heading",
+        "description": "<p>Example Paragraph<\/p>",
+        "button_label": "Button",
+        "button_link": ""
+      }
     }
   },
   "order": [
     "hero",
-    "featured-collection"
+    "featured-collection",
+    "163236737391ad6251"
   ]
 }
