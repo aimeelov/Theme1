@@ -65,13 +65,51 @@ button {
 }
 
 body {
-    font-family: ,;
-    font-size: px;
+    font-family: {
+            {
+            font_body.family
+        }
+    }
+
+    ,
+        {
+            {
+            font_body.fallback_families
+        }
+    }
+
+    ;
+
+    font-size: {
+            {
+            font_body_size
+        }
+    }
+
+    px;
 }
 
 header {
-    font-family: ,
-        ;
+    font-family: {
+            {
+            font_header.family
+        }
+    }
 
-    font-size: px;
+    ,
+        {
+            {
+            font_header.fallback_families
+        }
+    }
+
+    ;
+
+    font-size: {
+            {
+            font_header_size
+        }
+    }
+
+    px;
 }
