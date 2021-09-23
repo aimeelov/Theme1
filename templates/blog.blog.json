@@ -12,11 +12,17 @@
           "type": "blog_grid",
           "settings": {
           }
+        },
+        "d79c56fe-fd59-4de9-abdf-7733572a3b24": {
+          "type": "blog_pagination",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "a9d224c2-6ca2-46b3-be05-5798c8e787e0",
-        "0d8edfa3-1a8c-4aa3-99d7-95241b8dabea"
+        "0d8edfa3-1a8c-4aa3-99d7-95241b8dabea",
+        "d79c56fe-fd59-4de9-abdf-7733572a3b24"
       ],
       "settings": {
       }
