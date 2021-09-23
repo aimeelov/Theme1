@@ -16,10 +16,47 @@
         "featured_collection": "eyewear",
         "title": "Featured Collection"
       }
+    },
+    "16324395883babdb73": {
+      "type": "shop-the-look",
+      "blocks": {
+        "2a8aa545-2be6-4fd9-84eb-0591d38b1cfc": {
+          "type": "products",
+          "settings": {
+            "block_product": "example-1",
+            "horizontal": 50,
+            "vertical": 50
+          }
+        },
+        "638b4cbf-e6c7-4eae-a049-f6cabbaaa876": {
+          "type": "products",
+          "settings": {
+            "block_product": "",
+            "horizontal": 50,
+            "vertical": 50
+          }
+        },
+        "569b4212-d962-4d9b-9e8d-c1d00141a773": {
+          "type": "products",
+          "settings": {
+            "block_product": "",
+            "horizontal": 50,
+            "vertical": 50
+          }
+        }
+      },
+      "block_order": [
+        "2a8aa545-2be6-4fd9-84eb-0591d38b1cfc",
+        "638b4cbf-e6c7-4eae-a049-f6cabbaaa876",
+        "569b4212-d962-4d9b-9e8d-c1d00141a773"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "hero",
-    "featured-collection"
+    "featured-collection",
+    "16324395883babdb73"
   ]
 }
