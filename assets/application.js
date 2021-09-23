@@ -165,33 +165,22 @@ function fetchPredictiveSearch() {
     .then(data => { 
         console.log(data);
 
-        
+        var products = data.resources.results.products;
+
+        document.getElementById('search_results_body').innerHTML = '';
+
+        products.forEach(function(product, index) {
+            document.getElementById('search_results_body').innerHTML += `
+                <div class="card" style="width: 19rem;">
+                    <img src="${product.image} class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">${product.title}</h5>
+                        <p class="card-text">$${product.price}</p>
+                    </div>
+                </div>
+            `
+        });
         bsOffcanvas.show();
     });
 }
 
-var productInfoAnchors = document.querySelectorAll("#productInfoAnchor");
-
-var productModal = new bootstrap.Modal(document.getElementById('productInfoModal'), {});
-
-if(productInfoAnchors.length > 0) {
-    productInfoAnchors.forEach (item => {
-        item.addEventListener("click", event => {
-
-            var url = '/products/' + item.getAttribute('product-handle') + '.js';
-
-            fetch(url)
-            .then((resp) => resp.json())
-            .then(function(data) {
-                console.log(data);
-
-                document.getElementById("productInfoImg").src = data.images[0];
-                document.getElementById("productInfoTitle").innerHTML = data.title;
-                document.getElementById("productInfoPrice").innerHTML = item.getAttribute('product-price');
-                document.getElementById("productInfoDescription").innerHTML = data.description;
-
-                productModal.show();
-            });
-        });
-    });
-} 
