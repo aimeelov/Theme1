@@ -19,6 +19,9 @@ a {
 
 
 
+html,
+body {}
+
 .inner-hero-section {
     position: relative;
     overflow: hidden;
@@ -34,7 +37,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
     z-index: -1;
 }
 
@@ -51,7 +54,7 @@ a {
 }
 
 .localeBtn {
-    background-color: #fffdfd00;
+    background-color: #3298DB;
     color: #fff;
     padding: 6px;
     font-size: 20px;
@@ -66,7 +69,7 @@ a {
 
 .localeBtn img {
     width: 50px;
-    border-radius: 30px;
+    height: 50px;
 }
 
 .dropup-content {
@@ -95,6 +98,7 @@ a {
 #shopify-section-translation {
     position: fixed;
 }
+
 
 .btn-primary {
     color: #fff;
