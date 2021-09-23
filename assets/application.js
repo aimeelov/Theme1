@@ -209,8 +209,4 @@ if(productInfoAnchors.length > 0) {
             });
         });
     });
-<<<<<<< HEAD
 } 
-=======
-}
->>>>>>> ab4c10d (Update from Shopify for theme Theme1/main)
