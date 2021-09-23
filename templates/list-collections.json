@@ -1,7 +1,7 @@
 {
   "sections": {
     "template": {
-      "type": "template-404",
+      "type": "template-list-collections",
       "settings": {
       }
     }
