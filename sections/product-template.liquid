@@ -17,7 +17,7 @@
       <h1>{{ product.title }}</h1>
       <p>{{ current_product.price | money_with_currency }}</p>
 
-      {% form 'product', product, class: "product-form", id: "AddToCartForm" %}
+      <form action="/cart/add" method="post" class="product-form" id="add-to-cart">
         <div class="mb-3">
           <label for="productSelect" class="form-label">Size</label>
           <select name="id" id="ProductSelect" class="form-select">
@@ -41,12 +41,12 @@
         </div>
 
         <input type="submit" name="add" value="Purchase" class="btn btn--purchase" onclick="addItem('add-to-cart'); return false; ">
-        
+
         {% if section.settings.dynamic_buttons_checkbox == true %}
           {{ form | payment_button }}
         {% endif %}
       
-        {% endform %}
+      </form>
     </div>
   </div>
 </div>
