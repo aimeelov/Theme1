@@ -80,6 +80,7 @@ if(productInfoAnchors.length > 0) {
                 var variants = data.variants;
                 var variantSelect = document.getElementById("modalItemID");
 
+                variantSelect.innerHTML = '';
 
                 variants.forEach(function( variant, index) {
                     console.log(variant);
@@ -121,7 +122,7 @@ if( modalAddToCartForm != null ) {
             return resp.json();
         })
         .then((data) => {
-            update_cart();
+            console.log(data);
         })
         .catch((err) => {
             console.error('Error: ' + err);
