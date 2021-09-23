@@ -1,4 +1,4 @@
-{% assign current_product = product.selected_or_first_available_variant %}
+{% assign current_variant = product.selected_or_first_available_variant %}
 {% assign product_image = current_product.featured_image | default: product.featured_image %}
 
 <div class="containter">
@@ -15,7 +15,6 @@
 
       {% form 'product', product, class: "product-form", id: "AddToCartForm" %}
         <div class="mb-3">
-          <label for="productSelect" class="form-label">Size</label>
           <select name="id" id="ProductSelect" class="form-select">
             {% for variant in product.variants %}
               {%if variant.available %}
@@ -32,7 +31,6 @@
           </select>
         </div>
         <div class="mb-3">
-          <label for="Quantity" class="form-label">Quantity</label>
           <input type="number" class="form-control" name="quantity" id="Quantity" value="1" min="1">
         </div>
 
@@ -49,7 +47,7 @@
 
 {% schema %}
 {
-    "name": "Product",
+    "name": "Product pages",
     "settings": [
         {
             "type": "checkbox",
@@ -57,38 +55,6 @@
             "label": "Disable Dynamic Buttons",
             "default": false
         }
-    ],
-    "blocks": [
-      {
-        "type": "title",
-        "name": "Title",
-        "limit": 1
-      },
-      {
-        "type": "price",
-        "name": "Price",
-        "limit": 1
-      },
-      {
-        "type": "variant_selector",
-        "name": "Variant Selector",
-        "limit": 1
-      },
-      {
-        "type": "quantity",
-        "name": "Quantity",
-        "limit": 1
-      },
-      {
-        "type": "checkout_buttons",
-        "name": "Checkout Buttons",
-        "limit": 1
-      },
-      {
-        "type": "description",
-        "name": "Description",
-        "limit": 1
-      }
     ]
 }
 {% endschema %}
