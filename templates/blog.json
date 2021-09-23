@@ -3,14 +3,26 @@
     "template": {
       "type": "template-blog",
       "blocks": {
-        "a9d224c2-6ca2-46b3-be05-5798c8e787e0": {
+        "blog_title": {
           "type": "blog_title",
+          "settings": {
+          }
+        },
+        "blog_grid": {
+          "type": "blog_grid",
+          "settings": {
+          }
+        },
+        "blog_pagination": {
+          "type": "blog_pagination",
           "settings": {
           }
         }
       },
       "block_order": [
-        "a9d224c2-6ca2-46b3-be05-5798c8e787e0"
+        "blog_title",
+        "blog_grid",
+        "blog_pagination"
       ],
       "settings": {
       }
