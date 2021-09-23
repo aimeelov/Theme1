@@ -3,11 +3,11 @@
     "hero": {
       "type": "hero",
       "settings": {
-        "image": "shopify:\/\/shop_images\/ROADCASE-7_copy.jpg",
-        "title": "STRATA",
-        "description": "",
-        "button_label": "SHOP",
-        "button_link": "shopify:\/\/collections\/all"
+        "image": "",
+        "title": "Welcome To Strata",
+        "description": "<p>We are happy to welcome you to our official store<\/p>",
+        "button_label": "Learn more",
+        "button_link": "https:\/\/google.com\/"
       }
     },
     "featured-collection": {
