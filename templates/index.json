@@ -13,7 +13,7 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "featured_collection": "featured-collection",
+        "featured_collection": "eyewear",
         "title": "Featured Collection"
       }
     }
