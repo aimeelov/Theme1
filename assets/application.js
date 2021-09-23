@@ -80,7 +80,6 @@ if(productInfoAnchors.length > 0) {
                 var variants = data.variants;
                 var variantSelect = document.getElementById("modalItemID");
 
-                variantSelect.innerHTML = '';
 
                 variants.forEach(function( variant, index) {
                     console.log(variant);
