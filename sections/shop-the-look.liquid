@@ -1,0 +1,49 @@
+{% schema %}
+  {
+    "name": "Multi Products",
+    "settings": [
+      {
+        "id": "largeImage",
+        "type": "image_picker",
+        "label": "Large Image"
+      }
+    ],
+    "blocks": [
+      { 
+        "type": "products",
+        "name": "Products",
+        "settings": [
+          {
+            "type": "product",
+            "id": "block_product",
+            "label": "Product"
+          },
+          {
+            "type": "range",
+            "id": "horizontal",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "Horizontal Position",
+            "default": 50
+          },
+          {
+            "type": "range",
+            "id": "vertical",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "Vertical Position",
+            "default": 50
+          }
+        ]	
+      }
+    ],
+    "presets": [{
+      "name": "Multi Products",
+      "category": "product"
+    }]
+  }
+{% endschema %}
