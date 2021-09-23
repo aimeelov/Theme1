@@ -7,10 +7,16 @@
           "type": "blog_title",
           "settings": {
           }
+        },
+        "0d8edfa3-1a8c-4aa3-99d7-95241b8dabea": {
+          "type": "blog_grid",
+          "settings": {
+          }
         }
       },
       "block_order": [
-        "a9d224c2-6ca2-46b3-be05-5798c8e787e0"
+        "a9d224c2-6ca2-46b3-be05-5798c8e787e0",
+        "0d8edfa3-1a8c-4aa3-99d7-95241b8dabea"
       ],
       "settings": {
       }
