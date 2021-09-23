@@ -192,7 +192,7 @@ function fetchPredictiveSearch() {
 var multi_products = []
     {% for block in section.blocks %}
 
-      {% assign product_handle = block.settings.block_product %};
+      {% assign product_handle = block.settings.block_product %}
 
       var object = {}
 
@@ -221,3 +221,26 @@ var $product_container = $('#product')
     `
 
   $product_container.html(initial_product_html)
+
+  $('body').on('click', '.dot', function(){
+    $('.dot').removeClass('active')
+    $(this).addClass('active')
+
+    var handle = $(this).data('handle')
+
+    var this_product = multi_products.filter((product) => {
+      return product.handle === handle
+    })[0]
+
+
+    var product_html = `<div class="product">
+      <img src="${this_product.image}">
+      <h3>${this_product.title}</h3>
+      <p>$${this_product.price}</p>
+      <a class="button" href="${initial_product.url}">Shop this product</a>
+      </div>
+      `
+
+    $product_container.html(product_html)
+  })
+
