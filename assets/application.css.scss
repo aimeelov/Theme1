@@ -19,14 +19,11 @@ a {
 
 
 
-html,
-body {}
-
 .inner-hero-section {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 450px;
+    height: 400px;
 }
 
 .inner-hero-section img,
@@ -54,7 +51,7 @@ body {}
 }
 
 .localeBtn {
-    background-color: #3298DB;
+    background-color: #fffdfd00;
     color: #fff;
     padding: 6px;
     font-size: 20px;
@@ -69,7 +66,7 @@ body {}
 
 .localeBtn img {
     width: 50px;
-    height: 50px;
+    border-radius: 30px;
 }
 
 .dropup-content {
@@ -100,13 +97,3 @@ body {}
 }
 
 
-.btn-primary {
-    color: #fff;
-    background-color: #0000000;
-    border-color: #000000;
-}
-
-.button:hover,
-.button:active {
-    color: #000000d1;
-}

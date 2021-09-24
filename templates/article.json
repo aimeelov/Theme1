@@ -1,47 +1,27 @@
 {
-  "layout": "theme-blog-with-sidebar",
-  "sections": {
-    "template": {
-      "type": "template-article",
-      "blocks": {
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {
-          }
+    "layout": "theme-blog-with-sidebar",
+    "sections": {
+        "template": {
+            "type": "template-article",
+            "blocks": {
+                "featured_image": {
+                    "type": "featured_image"
+                },
+                "title": {
+                    "type": "title"
+                },
+                "article_meta": {
+                    "type": "article_meta"
+                },
+                "content": {
+                    "type": "content"
+                }
+            },
+            "block_order": ["featured_image","title","article_meta","content"]
         },
-        "title": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "article_meta": {
-          "type": "article_meta",
-          "settings": {
-          }
-        },
-        "content": {
-          "type": "content",
-          "settings": {
-          }
+        "sidebar": {
+            "type": "sidebar"
         }
-      },
-      "block_order": [
-        "featured_image",
-        "title",
-        "article_meta",
-        "content"
-      ],
-      "settings": {
-      }
     },
-    "sidebar": {
-      "type": "sidebar",
-      "settings": {
-      }
-    }
-  },
-  "order": [
-    "template",
-    "sidebar"
-  ]
+    "order": ["template", "sidebar"]
 }
